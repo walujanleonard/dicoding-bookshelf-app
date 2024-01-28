@@ -11,7 +11,7 @@ let books = [];
 const getBookInput = () => {
   const title = document.querySelector("#inputBookTitle").value;
   const author = document.querySelector("#inputBookAuthor").value;
-  const year = document.querySelector("#inputBookYear").value;
+  const year = Number(document.querySelector("#inputBookYear").value);
   const isComplete = document.querySelector("#inputBookIsComplete").checked;
 
   return { title, author, year, isComplete };
